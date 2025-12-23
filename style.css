@@ -96,3 +96,36 @@ th { background: var(--secondary); color: white; }
     position: fixed; bottom: 20px; right: 20px; background: var(--secondary); color: white;
     padding: 10px 20px; border-radius: 30px; border: none; z-index: 1000; cursor: pointer;
 }
+/* Walking Animation CSS */
+.walking-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    pointer-events: none; /* যাতে বাটনে ক্লিক করতে সমস্যা না হয় */
+    z-index: 999;
+    overflow: hidden;
+}
+
+.students {
+    width: 200px;
+    height: 100%;
+    background-image: url('https://i.imgur.com/L2w3G3d.png'); /* হাঁটার সিলুয়েট ছবি */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10px;
+    right: -200px; /* স্ক্রিনের বাইরে ডান দিকে শুরু */
+    animation: walkAcross 15s linear infinite;
+}
+
+/* অ্যানিমেশন লজিক: ডান থেকে বামে যাবে */
+@keyframes walkAcross {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-120vw); /* স্ক্রিনের বাম পাশে চলে যাবে */
+    }
+}
