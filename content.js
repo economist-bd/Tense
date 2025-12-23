@@ -742,7 +742,7 @@ const bookData = [
             <h2>ধন্যবাদান্তে</h2>
             <div style="text-align:center;">
                 
-
+<img src="https://i.ibb.co.com/LDMM7qTn/d.png" alt="d" border="0">
 [Image of author]
 
                 <h3>মঞ্জুরুল হক</h3>
